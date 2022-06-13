@@ -6,10 +6,10 @@ def process_message(update, context):
 
     text = update.message.text
 
-    if str(text).__contains__('#channel'):
+    if str(text).__contains__('-1001590309863'):
         context.bot.send_message(
             chat_id='-1001590309863',
-            text=str(text).replace('#channel', '')
+            text=str(text).replace('-1001590309863', '')
         )
 
 
